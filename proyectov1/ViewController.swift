@@ -106,8 +106,22 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
     }
     
-    
-    
+    //funcion para el chekc del curso
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            if TablaCursos.cellForRow(at: indexPath)?.accessoryType == .checkmark{
+                TablaCursos.cellForRow(at: indexPath)?.accessoryType == .none
+            } else {
+                TablaCursos.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            }
+            
+            //editar el dato en la bd
+            listaCursos[indexPath.row].disponible = !listaCursos[indexPath.row].disponible
+            guardar()
+            
+            
+            //dseleccionar el check
+            TablaCursos.deselectRow(at: indexPath, animated: true)
+        }
     
     
     
