@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ajh-Dd-7Be">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -75,6 +75,106 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="88.392857142857139"/>
         </scene>
+        <!--Login Table View Controller-->
+        <scene sceneID="BHm-3E-TLs">
+            <objects>
+                <tableViewController id="kgZ-K4-6iN" customClass="LoginTableViewController" customModule="proyectov1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fNa-7E-cx8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="uIL-t6-Eah">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="838" id="Fx3-k5-Crl">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="838"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fx3-k5-Crl" id="4b4-th-7lt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Proyecto" translatesAutoresizingMaskIntoConstraints="NO" id="9Or-Mo-2ml">
+                                                    <rect key="frame" x="87" y="60" width="240" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="r8H-wp-n3m"/>
+                                                        <constraint firstAttribute="height" constant="128" id="rJA-bd-IXu"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7E-Sn-7QJ">
+                                                    <rect key="frame" x="30" y="228" width="94.5" height="25"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZe-hN-Shc">
+                                                    <rect key="frame" x="30" y="323" width="94.5" height="25"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lVO-G0-T8t">
+                                                    <rect key="frame" x="30" y="263" width="354" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="zsH-rF-2B3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ed-35-He7">
+                                                    <rect key="frame" x="30" y="358" width="354" height="40"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SU4-2v-Nza">
+                                                    <rect key="frame" x="110.5" y="418" width="193" height="37"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                                    <state key="normal" title="Login"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="VKu-23-RXu">
+                                                    <rect key="frame" x="110.5" y="465" width="193" height="37"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                    <state key="normal" title="Olvisate tu contraseña?"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lVO-G0-T8t" firstAttribute="top" secondItem="A7E-Sn-7QJ" secondAttribute="bottom" constant="10" id="07c-gw-kSd"/>
+                                                <constraint firstItem="9Or-Mo-2ml" firstAttribute="top" secondItem="4b4-th-7lt" secondAttribute="top" constant="60" id="3pd-J5-zul"/>
+                                                <constraint firstItem="VKu-23-RXu" firstAttribute="leading" secondItem="SU4-2v-Nza" secondAttribute="leading" id="FjE-h2-hAz"/>
+                                                <constraint firstItem="A7E-Sn-7QJ" firstAttribute="leading" secondItem="4b4-th-7lt" secondAttribute="leading" constant="30" id="I16-wA-WuG"/>
+                                                <constraint firstItem="8Ed-35-He7" firstAttribute="leading" secondItem="lVO-G0-T8t" secondAttribute="leading" id="Mld-xL-hBQ"/>
+                                                <constraint firstItem="9Or-Mo-2ml" firstAttribute="centerX" secondItem="4b4-th-7lt" secondAttribute="centerX" id="MqJ-bX-VCw"/>
+                                                <constraint firstItem="A7E-Sn-7QJ" firstAttribute="top" secondItem="9Or-Mo-2ml" secondAttribute="bottom" constant="40" id="MsI-cW-0Wj"/>
+                                                <constraint firstItem="DZe-hN-Shc" firstAttribute="leading" secondItem="A7E-Sn-7QJ" secondAttribute="leading" id="OBf-4z-Sq4"/>
+                                                <constraint firstItem="lVO-G0-T8t" firstAttribute="leading" secondItem="A7E-Sn-7QJ" secondAttribute="leading" id="REK-Nj-dPF"/>
+                                                <constraint firstItem="SU4-2v-Nza" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4b4-th-7lt" secondAttribute="leading" constant="30" id="So7-FL-6JH"/>
+                                                <constraint firstItem="SU4-2v-Nza" firstAttribute="top" secondItem="8Ed-35-He7" secondAttribute="bottom" constant="20" id="XWe-1x-lAO"/>
+                                                <constraint firstAttribute="trailing" secondItem="lVO-G0-T8t" secondAttribute="trailing" constant="30" id="YXz-UV-p6z"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SU4-2v-Nza" secondAttribute="trailing" constant="30" id="Zqe-FD-i7Q"/>
+                                                <constraint firstItem="SU4-2v-Nza" firstAttribute="centerX" secondItem="4b4-th-7lt" secondAttribute="centerX" id="cfp-oW-J6E"/>
+                                                <constraint firstItem="8Ed-35-He7" firstAttribute="height" secondItem="lVO-G0-T8t" secondAttribute="height" id="eme-CV-dNJ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A7E-Sn-7QJ" secondAttribute="trailing" constant="30" id="pG1-bL-2tJ"/>
+                                                <constraint firstItem="8Ed-35-He7" firstAttribute="trailing" secondItem="lVO-G0-T8t" secondAttribute="trailing" id="s57-5F-OYp"/>
+                                                <constraint firstItem="8Ed-35-He7" firstAttribute="top" secondItem="DZe-hN-Shc" secondAttribute="bottom" constant="10" id="uR2-Mx-svu"/>
+                                                <constraint firstItem="VKu-23-RXu" firstAttribute="top" secondItem="SU4-2v-Nza" secondAttribute="bottom" constant="10" id="wfb-7G-Obc"/>
+                                                <constraint firstItem="VKu-23-RXu" firstAttribute="trailing" secondItem="SU4-2v-Nza" secondAttribute="trailing" id="x7F-iN-yWJ"/>
+                                                <constraint firstItem="DZe-hN-Shc" firstAttribute="top" secondItem="lVO-G0-T8t" secondAttribute="bottom" constant="20" id="yHc-Xc-LbU"/>
+                                                <constraint firstItem="DZe-hN-Shc" firstAttribute="trailing" secondItem="A7E-Sn-7QJ" secondAttribute="trailing" id="yen-Zf-YVf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="kgZ-K4-6iN" id="FQ9-4r-HGl"/>
+                            <outlet property="delegate" destination="kgZ-K4-6iN" id="9Bp-lE-EwY"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybZ-JI-lXu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737.68115942029" y="87.723214285714278"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="AYM-nC-2Wn">
             <objects>
@@ -95,6 +195,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Logo-Proyecto" width="276" height="198"/>
         <image name="moon" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
