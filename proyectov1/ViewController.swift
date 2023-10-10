@@ -124,37 +124,25 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
     
     
-    
-    
-    
-    
-    
-    /*
-    extension ViewController:UITableViewDelegate,UITableViewDataSource{
-        
-        //metodo obligatorio1
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return  listaCursos.count
+    //funcion para eliminar
+        func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath:
+                        IndexPath) -> UISwipeActionsConfiguration? {
+            let accioneliminar = UIContextualAction(style: .normal, title: "Borrar") { _, _, _ in
+                self.contexto.delete(self.listaCursos[indexPath.row])
+                
+                self.listaCursos.remove(at: indexPath.row)
+                
+                self.guardar()
+            }
+            accioneliminar.backgroundColor = .red
+            
+            return UISwipeActionsConfiguration(actions: [accioneliminar])
         }
-        
-        //metodo obligatorio2
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            
-            let celda = TablaCursos.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
-            
-            let curso = listaCursos[indexPath.row]
-            
-            //operador ternario
-            celda.textLabel?.text = curso.nombre
-            celda.textLabel?.textColor = curso.disponible ? .black : .blue
-            celda.detailTextLabel?.text = curso.disponible ? "No disponible" : "Disponible"
-            
-            //marcar con un identificardor
-            celda.accessoryType = curso.disponible ? .checkmark : .none
-            
-            
-            return celda
-        }
-        */
+    
+    
+    
+    
+    
+    
 }
 
