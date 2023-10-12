@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXX-7k-Jdd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kgZ-K4-6iN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -79,7 +79,7 @@
         <scene sceneID="BHm-3E-TLs">
             <objects>
                 <tableViewController id="kgZ-K4-6iN" customClass="LoginTableViewController" customModule="proyectov1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fNa-7E-cx8">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fNa-7E-cx8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -135,16 +135,70 @@
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                     <state key="normal" title="Olvisate tu contraseña?"/>
                                                 </button>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="MzP-jC-EOc" userLabel="Social media">
+                                                    <rect key="frame" x="44.5" y="735" width="325" height="36"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-vg-mUi">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="36"/>
+                                                            <color key="backgroundColor" red="0.30964878627232145" green="0.44811347390518708" blue="0.64592177202912415" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="150" id="hCN-na-7Vz"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                            <state key="normal" title="Facebook">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEp-uE-Hw9">
+                                                            <rect key="frame" x="175" y="0.0" width="150" height="36"/>
+                                                            <color key="backgroundColor" red="0.88805737138605445" green="0.3996669224330357" blue="0.32584801498724492" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                            <state key="normal" title="Google">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="tEp-uE-Hw9" firstAttribute="height" secondItem="S2n-vg-mUi" secondAttribute="height" id="774-93-VgJ"/>
+                                                        <constraint firstItem="tEp-uE-Hw9" firstAttribute="width" secondItem="S2n-vg-mUi" secondAttribute="width" id="zsO-c4-7ws"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3lF-fr-IeE" userLabel="Account">
+                                                    <rect key="frame" x="89" y="791" width="236.5" height="37"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tienes cuenta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gn-mL-8pu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="140.5" height="37"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htq-38-GqU">
+                                                            <rect key="frame" x="145.5" y="0.0" width="91" height="37"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                                            <state key="normal" title="Loguearse"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="======== o conectate con ========" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mob-3q-tMq">
+                                                    <rect key="frame" x="59" y="694.5" width="296" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="lVO-G0-T8t" firstAttribute="top" secondItem="A7E-Sn-7QJ" secondAttribute="bottom" constant="10" id="07c-gw-kSd"/>
+                                                <constraint firstItem="MzP-jC-EOc" firstAttribute="centerX" secondItem="4b4-th-7lt" secondAttribute="centerX" id="2E0-Bz-l4n"/>
                                                 <constraint firstItem="9Or-Mo-2ml" firstAttribute="top" secondItem="4b4-th-7lt" secondAttribute="top" constant="60" id="3pd-J5-zul"/>
                                                 <constraint firstItem="VKu-23-RXu" firstAttribute="leading" secondItem="SU4-2v-Nza" secondAttribute="leading" id="FjE-h2-hAz"/>
                                                 <constraint firstItem="A7E-Sn-7QJ" firstAttribute="leading" secondItem="4b4-th-7lt" secondAttribute="leading" constant="30" id="I16-wA-WuG"/>
                                                 <constraint firstItem="8Ed-35-He7" firstAttribute="leading" secondItem="lVO-G0-T8t" secondAttribute="leading" id="Mld-xL-hBQ"/>
                                                 <constraint firstItem="9Or-Mo-2ml" firstAttribute="centerX" secondItem="4b4-th-7lt" secondAttribute="centerX" id="MqJ-bX-VCw"/>
                                                 <constraint firstItem="A7E-Sn-7QJ" firstAttribute="top" secondItem="9Or-Mo-2ml" secondAttribute="bottom" constant="40" id="MsI-cW-0Wj"/>
+                                                <constraint firstAttribute="bottom" secondItem="3lF-fr-IeE" secondAttribute="bottom" constant="10" id="NG1-6y-PP0"/>
                                                 <constraint firstItem="DZe-hN-Shc" firstAttribute="leading" secondItem="A7E-Sn-7QJ" secondAttribute="leading" id="OBf-4z-Sq4"/>
+                                                <constraint firstItem="MzP-jC-EOc" firstAttribute="top" secondItem="mob-3q-tMq" secondAttribute="bottom" constant="20" id="Pat-1S-2VQ"/>
+                                                <constraint firstItem="mob-3q-tMq" firstAttribute="top" secondItem="VKu-23-RXu" secondAttribute="bottom" constant="192.5" id="R9v-bb-nhz"/>
                                                 <constraint firstItem="lVO-G0-T8t" firstAttribute="leading" secondItem="A7E-Sn-7QJ" secondAttribute="leading" id="REK-Nj-dPF"/>
                                                 <constraint firstItem="SU4-2v-Nza" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4b4-th-7lt" secondAttribute="leading" constant="30" id="So7-FL-6JH"/>
                                                 <constraint firstItem="SU4-2v-Nza" firstAttribute="top" secondItem="8Ed-35-He7" secondAttribute="bottom" constant="20" id="XWe-1x-lAO"/>
@@ -153,10 +207,13 @@
                                                 <constraint firstItem="SU4-2v-Nza" firstAttribute="centerX" secondItem="4b4-th-7lt" secondAttribute="centerX" id="cfp-oW-J6E"/>
                                                 <constraint firstItem="8Ed-35-He7" firstAttribute="height" secondItem="lVO-G0-T8t" secondAttribute="height" id="eme-CV-dNJ"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A7E-Sn-7QJ" secondAttribute="trailing" constant="30" id="pG1-bL-2tJ"/>
+                                                <constraint firstItem="mob-3q-tMq" firstAttribute="centerX" secondItem="4b4-th-7lt" secondAttribute="centerX" id="q32-hB-yVM"/>
                                                 <constraint firstItem="8Ed-35-He7" firstAttribute="trailing" secondItem="lVO-G0-T8t" secondAttribute="trailing" id="s57-5F-OYp"/>
                                                 <constraint firstItem="8Ed-35-He7" firstAttribute="top" secondItem="DZe-hN-Shc" secondAttribute="bottom" constant="10" id="uR2-Mx-svu"/>
+                                                <constraint firstItem="3lF-fr-IeE" firstAttribute="centerX" secondItem="4b4-th-7lt" secondAttribute="centerX" id="waN-E3-4ul"/>
                                                 <constraint firstItem="VKu-23-RXu" firstAttribute="top" secondItem="SU4-2v-Nza" secondAttribute="bottom" constant="10" id="wfb-7G-Obc"/>
                                                 <constraint firstItem="VKu-23-RXu" firstAttribute="trailing" secondItem="SU4-2v-Nza" secondAttribute="trailing" id="x7F-iN-yWJ"/>
+                                                <constraint firstItem="3lF-fr-IeE" firstAttribute="top" secondItem="MzP-jC-EOc" secondAttribute="bottom" constant="20" id="x8b-8L-Omp"/>
                                                 <constraint firstItem="DZe-hN-Shc" firstAttribute="top" secondItem="lVO-G0-T8t" secondAttribute="bottom" constant="20" id="yHc-Xc-LbU"/>
                                                 <constraint firstItem="DZe-hN-Shc" firstAttribute="trailing" secondItem="A7E-Sn-7QJ" secondAttribute="trailing" id="yen-Zf-YVf"/>
                                             </constraints>
@@ -173,7 +230,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybZ-JI-lXu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2647.826086956522" y="87.723214285714278"/>
+            <point key="canvasLocation" x="2636" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kzP-su-Ee0">
