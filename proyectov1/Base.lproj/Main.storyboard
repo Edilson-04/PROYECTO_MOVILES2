@@ -129,6 +129,9 @@
                                                     <rect key="frame" x="110.5" y="418" width="193" height="37"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                                     <state key="normal" title="Login"/>
+                                                    <connections>
+                                                        <action selector="btnLoginClicked:" destination="kgZ-K4-6iN" eventType="touchUpInside" id="Dgm-qX-TYD"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="VKu-23-RXu">
                                                     <rect key="frame" x="110.5" y="465" width="193" height="37"/>
@@ -227,6 +230,10 @@
                             <outlet property="delegate" destination="kgZ-K4-6iN" id="9Bp-lE-EwY"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="txtContraseña" destination="8Ed-35-He7" id="jQs-ST-CX7"/>
+                        <outlet property="txtUsuario" destination="lVO-G0-T8t" id="EW0-ck-Qlq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybZ-JI-lXu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
