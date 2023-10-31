@@ -10,7 +10,7 @@ import Foundation
 extension String{
     
     func validateUsuarioId() -> Bool {
-        let usuarioRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        let usuarioRegEx = "^[A-Za-z0-9._%+-]{3,20}"
         return applyPredicateOnRegex(regexStr: usuarioRegEx)
     }
     
@@ -27,10 +27,12 @@ extension String{
     
     //https://stackoverflow.com/a/39284766/8201581
     
-    func applyPredicateOnRegex(regexStr: String) -> Bool{
+    func applyPredicateOnRegex(regexStr: String) -> Bool {
         let trimmedString = self.trimmingCharacters(in: .whitespaces)
-        let validateOtherString = NSPredicate(format: "SELF MATCHES %@", regexStr)
-        let isValidateOtherString = validateOtherString.evaluate(with: trimmedString)
-        return isValidateOtherString
+        let validateString = NSPredicate(format: "SELF MATCHES %@", regexStr)
+        let isStringValid = validateString.evaluate(with: trimmedString)
+        return isStringValid
     }
+
+  
 }
