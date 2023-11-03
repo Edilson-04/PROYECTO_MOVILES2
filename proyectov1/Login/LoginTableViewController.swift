@@ -27,6 +27,10 @@ class LoginTableViewController: UITableViewController {
         ValidationCode();
     }
     
+    @IBAction func btnInscribirseClicked(_ sender: UIButton) {
+        if let inscribirseVC = self.storyboard?.instantiateViewController(identifier: "InscribirseTableViewController")as? InscribirseTableViewController{}
+    }
+
 };extension LoginTableViewController{
     fileprivate func ValidationCode() {
         if let usuario = txtUsuario.text, let contraseña  = txtContraseña.text{
