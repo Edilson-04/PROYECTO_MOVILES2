@@ -28,7 +28,9 @@ class LoginTableViewController: UITableViewController {
     }
     
     @IBAction func btnInscribirseClicked(_ sender: UIButton) {
-        if let inscribirseVC = self.storyboard?.instantiateViewController(identifier: "InscribirseTableViewController")as? InscribirseTableViewController{}
+        if let inscribirseVC = self.storyboard?.instantiateViewController(identifier: "InscribirseTableViewController")as? InscribirseTableViewController{
+            self.navigationController?.pushViewController(inscribirseVC, animated: true)
+        }
     }
 
 };extension LoginTableViewController{

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kgZ-K4-6iN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="38Q-rt-K1s">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zcI-fP-bbP">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" textLabel="TiR-rM-JX4" detailTextLabel="K85-aZ-yJP" imageView="WTJ-RB-VdD" style="IBUITableViewCellStyleSubtitle" id="aYc-z8-NSK">
@@ -233,6 +233,7 @@
                             <outlet property="delegate" destination="kgZ-K4-6iN" id="9Bp-lE-EwY"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="H27-oa-4Gw"/>
                     <connections>
                         <outlet property="txtContraseña" destination="8Ed-35-He7" id="jQs-ST-CX7"/>
                         <outlet property="txtUsuario" destination="lVO-G0-T8t" id="EW0-ck-Qlq"/>
@@ -240,7 +241,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybZ-JI-lXu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2636" y="88"/>
+            <point key="canvasLocation" x="3544.9275362318845" y="87.723214285714278"/>
         </scene>
         <!--Inscribirse Table View Controller-->
         <scene sceneID="YAI-zg-xJd">
@@ -260,8 +261,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="841"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Proyecto" translatesAutoresizingMaskIntoConstraints="NO" id="Mge-9v-JHe">
-                                                    <rect key="frame" x="87" y="60" width="240" height="128"/>
+                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mge-9v-JHe">
+                                                    <rect key="frame" x="87" y="60.5" width="240" height="127"/>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="240" id="Wxi-Mf-frY"/>
                                                         <constraint firstAttribute="height" constant="128" id="a2R-qL-zRR"/>
@@ -312,6 +314,9 @@
                                                     <rect key="frame" x="161.5" y="608" width="91" height="37"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                                     <state key="normal" title="Inscribirse"/>
+                                                    <connections>
+                                                        <action selector="btnInscribirseClicked:" destination="9bi-IN-zP0" eventType="touchUpInside" id="ktz-EA-jWb"/>
+                                                    </connections>
                                                 </button>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="J6J-xB-DGc" userLabel="Cuenta">
                                                     <rect key="frame" x="76" y="794" width="262" height="37"/>
@@ -386,34 +391,42 @@
                             <outlet property="delegate" destination="9bi-IN-zP0" id="Zgd-5x-Ygm"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="imgPerfil" destination="Mge-9v-JHe" id="XgF-uA-xqN"/>
+                        <outlet property="txtConfContraseña" destination="nQn-a0-NYe" id="JpV-Gq-jjv"/>
+                        <outlet property="txtContraseña" destination="wUY-mD-WXI" id="xkx-u0-sj2"/>
+                        <outlet property="txtCorreo" destination="QdJ-R4-dtH" id="BkR-AY-6d3"/>
+                        <outlet property="txtUsuarionom" destination="eBh-ii-zpV" id="jAI-dC-udr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8Z-kW-fob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="EaH-dr-I4I" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3357.971014492754" y="87.723214285714278"/>
+            <point key="canvasLocation" x="4268.115942028986" y="87.723214285714278"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="kzP-su-Ee0">
+        <scene sceneID="W9u-CH-xnN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vXX-7k-Jdd" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="38Q-rt-K1s" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iAG-2N-e4p">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q9l-2k-mR7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SUl-GR-p5y"/>
+                        <segue destination="kgZ-K4-6iN" kind="relationship" relationship="rootViewController" id="GtG-hH-jHW"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Njb-ib-MpE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7L-1T-knp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939.13043478260875" y="88.392857142857139"/>
+            <point key="canvasLocation" x="2634.7826086956525" y="87.723214285714278"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo-Proyecto" width="276" height="198"/>
         <image name="moon" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
