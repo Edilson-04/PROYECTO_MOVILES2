@@ -25,12 +25,39 @@ class InscribirseTableViewController: UITableViewController {
     
     @objc
     func imagenaprovechada(tapGestureReconigzer:UITapGestureRecognizer){
-        print("Imagen Aprovechada!")
+        
         abrirGaleria()
     }
     
     
     @IBAction func btnInscribirseClicked(_ sender: UIButton) {
+            if let correo = txtCorreo.text,let contraseña = txtContraseña.text,
+               let nomusuario = txtUsuarionom.text,let conContraseña = txtConfContraseña.text{
+                if !nomusuario.validateUsuarioId(){
+                    //Si usuario es valido
+                    openAlert(title: "Alerta", message: "Por favor ingrese su usuario", alertStyle: .alert, actionTitles:["Bien"], actionStyles: [.default], actions: [{_ in}])
+                    print ("Usuario no valido")
+                }else if !contraseña.validateContraseña(){
+                    //si contraseña es valida
+                    print("Contraseña no valida")
+                }else if correo == ""{
+                 print ("Por favor ingresa tu correo")
+                }else{
+                    if conContraseña == ""{
+                       print("Porfavor confirmar contraseña")
+                    }else{
+                        if contraseña == conContraseña{
+                            //codigo de navegacion
+                            print("Navigation code Yeah!")
+                        }else{
+                            print("La contraseñas no coinciden")
+                        }
+                    }
+                }
+            }else{
+                print("Por favor comprueba tus detalles")
+            }
+        
     }
     
     
@@ -52,7 +79,8 @@ class InscribirseTableViewController: UITableViewController {
         
         self.tableView.contentInset = UIEdgeInsets(top: topInset, left: 0.0, bottom: 0.0, right: 0.0)
     }
-};extension InscribirseTableViewController:UINavigationControllerDelegate,UIImagePickerControllerDelegate{
+}
+extension InscribirseTableViewController:UINavigationControllerDelegate,UIImagePickerControllerDelegate{
   
     func abrirGaleria(){
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
