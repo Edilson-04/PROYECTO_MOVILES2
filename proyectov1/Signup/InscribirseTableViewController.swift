@@ -33,29 +33,27 @@ class InscribirseTableViewController: UITableViewController {
     @IBAction func btnInscribirseClicked(_ sender: UIButton) {
             if let correo = txtCorreo.text,let contraseña = txtContraseña.text,
                let nomusuario = txtUsuarionom.text,let conContraseña = txtConfContraseña.text{
-                if !nomusuario.validateUsuarioId(){
-                    //Si usuario es valido
-                    openAlert(title: "Alerta", message: "Por favor ingrese su usuario", alertStyle: .alert, actionTitles:["Bien"], actionStyles: [.default], actions: [{_ in}])
-                    print ("Usuario no valido")
+                if nomusuario == ""{
+                    print("Please enter username")
+                }else if !nomusuario.validateUsuarioId(){
+                    openAlert(title: "Alert", message: "Please enter valid email", alertStyle: .alert, actionTitles: ["Okay"], actionStyles: [.default], actions: [{_ in }])
+                    print("email is not valid")
                 }else if !contraseña.validateContraseña(){
-                    //si contraseña es valida
-                    print("Contraseña no valida")
-                }else if correo == ""{
-                 print ("Por favor ingresa tu correo")
-                }else{
+                    print("Password is not valid")
+                } else{
                     if conContraseña == ""{
-                       print("Porfavor confirmar contraseña")
+                        print("Please confirm password")
                     }else{
                         if contraseña == conContraseña{
-                            //codigo de navegacion
+                            // navigation code
                             print("Navigation code Yeah!")
                         }else{
-                            print("La contraseñas no coinciden")
+                            print("password does not match")
                         }
                     }
                 }
             }else{
-                print("Por favor comprueba tus detalles")
+                print("Please check your details")
             }
         
     }
