@@ -11,28 +11,44 @@
 		B74C114E2ACC544600301DFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C114D2ACC544600301DFB /* SceneDelegate.swift */; };
 		B74C11502ACC544600301DFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C114F2ACC544600301DFB /* ViewController.swift */; };
 		B74C11532ACC544600301DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74C11512ACC544600301DFB /* Main.storyboard */; };
-		B74C11562ACC544600301DFB /* proyectov1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B74C11542ACC544600301DFB /* proyectov1.xcdatamodeld */; };
 		B74C11582ACC544B00301DFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B74C11572ACC544B00301DFB /* Assets.xcassets */; };
 		B74C115B2ACC544B00301DFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74C11592ACC544B00301DFB /* LaunchScreen.storyboard */; };
 		B7546E202AD603DB00207A5D /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7546E1F2AD603DB00207A5D /* LoginTableViewController.swift */; };
 		B7B03E3B2AF5933A009C6826 /* InscribirseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B03E3A2AF5933A009C6826 /* InscribirseTableViewController.swift */; };
+		B7B4D4942B095A870053D6F0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4D48D2B095A860053D6F0 /* MainViewController.swift */; };
+		B7B4D4952B095A870053D6F0 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4D48E2B095A860053D6F0 /* SideMenuViewController.swift */; };
+		B7B4D4962B095A870053D6F0 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4D48F2B095A870053D6F0 /* SideMenuModel.swift */; };
+		B7B4D4972B095A870053D6F0 /* CursosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4D4902B095A870053D6F0 /* CursosViewController.swift */; };
+		B7B4D4992B095A870053D6F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4D4922B095A870053D6F0 /* HomeViewController.swift */; };
+		B7B4D49A2B095A870053D6F0 /* AlumnosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4D4932B095A870053D6F0 /* AlumnosViewController.swift */; };
+		B7B4D49D2B095AA30053D6F0 /* proyectov1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7B4D49B2B095AA30053D6F0 /* proyectov1.xcdatamodeld */; };
+		B7B4D4A12B095BEE0053D6F0 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B4D4A02B095BEE0053D6F0 /* SideMenuCell.xib */; };
+		B7B4D4A32B095D5A0053D6F0 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4D4A22B095D5A0053D6F0 /* SideMenuCell.swift */; };
 		B7CB7B082AE0853F00EBCE4C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB7B072AE0853F00EBCE4C /* Extension.swift */; };
 		B7CB7B0A2AE0858200EBCE4C /* UiAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB7B092AE0858200EBCE4C /* UiAlertController.swift */; };
 		B7CB7B0C2AE0859D00EBCE4C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB7B0B2AE0859D00EBCE4C /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B74C11482ACC544600301DFB /* proyectov1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = proyectov1.app; path = "/Users/damii/Documents/VegaGabriel_DAM2/Proyecto_Moviles2/PROYECTO_MOVILES2/build/Debug-iphoneos/proyectov1.app"; sourceTree = "<absolute>"; };
+		B7093A8A2B013B4A009AF03F /* proyectov1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectov1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74C114B2ACC544600301DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B74C114D2ACC544600301DFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B74C114F2ACC544600301DFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B74C11522ACC544600301DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B74C11552ACC544600301DFB /* proyectov1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = proyectov1.xcdatamodel; sourceTree = "<group>"; };
 		B74C11572ACC544B00301DFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B74C115A2ACC544B00301DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B74C115C2ACC544B00301DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7546E1F2AD603DB00207A5D /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		B7B03E3A2AF5933A009C6826 /* InscribirseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InscribirseTableViewController.swift; sourceTree = "<group>"; };
+		B7B4D48D2B095A860053D6F0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B7B4D48E2B095A860053D6F0 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		B7B4D48F2B095A870053D6F0 /* SideMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		B7B4D4902B095A870053D6F0 /* CursosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CursosViewController.swift; sourceTree = "<group>"; };
+		B7B4D4922B095A870053D6F0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B7B4D4932B095A870053D6F0 /* AlumnosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlumnosViewController.swift; sourceTree = "<group>"; };
+		B7B4D49C2B095AA30053D6F0 /* proyectov1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = proyectov1.xcdatamodel; sourceTree = "<group>"; };
+		B7B4D4A02B095BEE0053D6F0 /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		B7B4D4A22B095D5A0053D6F0 /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		B7CB7B072AE0853F00EBCE4C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B7CB7B092AE0858200EBCE4C /* UiAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiAlertController.swift; sourceTree = "<group>"; };
 		B7CB7B0B2AE0859D00EBCE4C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B74C114A2ACC544600301DFB /* proyectov1 */,
+				B7093A8A2B013B4A009AF03F /* proyectov1.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,13 +70,21 @@
 				B7B03E342AF58394009C6826 /* Login */,
 				B7CB7B062AE0851600EBCE4C /* Extension */,
 				B74C114B2ACC544600301DFB /* AppDelegate.swift */,
+				B7B4D4A02B095BEE0053D6F0 /* SideMenuCell.xib */,
 				B74C114D2ACC544600301DFB /* SceneDelegate.swift */,
+				B7B4D49B2B095AA30053D6F0 /* proyectov1.xcdatamodeld */,
 				B74C114F2ACC544600301DFB /* ViewController.swift */,
 				B74C11512ACC544600301DFB /* Main.storyboard */,
+				B7B4D4932B095A870053D6F0 /* AlumnosViewController.swift */,
+				B7B4D4902B095A870053D6F0 /* CursosViewController.swift */,
+				B7B4D4922B095A870053D6F0 /* HomeViewController.swift */,
+				B7B4D48D2B095A860053D6F0 /* MainViewController.swift */,
+				B7B4D48F2B095A870053D6F0 /* SideMenuModel.swift */,
+				B7B4D48E2B095A860053D6F0 /* SideMenuViewController.swift */,
+				B7B4D4A22B095D5A0053D6F0 /* SideMenuCell.swift */,
 				B74C11572ACC544B00301DFB /* Assets.xcassets */,
 				B74C11592ACC544B00301DFB /* LaunchScreen.storyboard */,
 				B74C115C2ACC544B00301DFB /* Info.plist */,
-				B74C11542ACC544600301DFB /* proyectov1.xcdatamodeld */,
 			);
 			path = proyectov1;
 			sourceTree = "<group>";
@@ -106,7 +131,7 @@
 			);
 			name = proyectov1;
 			productName = proyectov1;
-			productReference = B74C11482ACC544600301DFB /* proyectov1.app */;
+			productReference = B7093A8A2B013B4A009AF03F /* proyectov1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -149,6 +174,7 @@
 				B74C115B2ACC544B00301DFB /* LaunchScreen.storyboard in Resources */,
 				B74C11582ACC544B00301DFB /* Assets.xcassets in Resources */,
 				B74C11532ACC544600301DFB /* Main.storyboard in Resources */,
+				B7B4D4A12B095BEE0053D6F0 /* SideMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,15 +185,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B4D4972B095A870053D6F0 /* CursosViewController.swift in Sources */,
 				B7546E202AD603DB00207A5D /* LoginTableViewController.swift in Sources */,
+				B7B4D4962B095A870053D6F0 /* SideMenuModel.swift in Sources */,
 				B74C11502ACC544600301DFB /* ViewController.swift in Sources */,
+				B7B4D49D2B095AA30053D6F0 /* proyectov1.xcdatamodeld in Sources */,
+				B7B4D49A2B095A870053D6F0 /* AlumnosViewController.swift in Sources */,
+				B7B4D4992B095A870053D6F0 /* HomeViewController.swift in Sources */,
+				B7B4D4A32B095D5A0053D6F0 /* SideMenuCell.swift in Sources */,
 				B7B03E3B2AF5933A009C6826 /* InscribirseTableViewController.swift in Sources */,
 				B74C114C2ACC544600301DFB /* AppDelegate.swift in Sources */,
+				B7B4D4952B095A870053D6F0 /* SideMenuViewController.swift in Sources */,
 				B7CB7B082AE0853F00EBCE4C /* Extension.swift in Sources */,
 				B74C114E2ACC544600301DFB /* SceneDelegate.swift in Sources */,
 				B7CB7B0A2AE0858200EBCE4C /* UiAlertController.swift in Sources */,
 				B7CB7B0C2AE0859D00EBCE4C /* UIViewController.swift in Sources */,
-				B74C11562ACC544600301DFB /* proyectov1.xcdatamodeld in Sources */,
+				B7B4D4942B095A870053D6F0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,12 +402,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B74C11542ACC544600301DFB /* proyectov1.xcdatamodeld */ = {
+		B7B4D49B2B095AA30053D6F0 /* proyectov1.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B74C11552ACC544600301DFB /* proyectov1.xcdatamodel */,
+				B7B4D49C2B095AA30053D6F0 /* proyectov1.xcdatamodel */,
 			);
-			currentVersion = B74C11552ACC544600301DFB /* proyectov1.xcdatamodel */;
+			currentVersion = B7B4D49C2B095AA30053D6F0 /* proyectov1.xcdatamodel */;
 			path = proyectov1.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
